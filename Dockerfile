@@ -8,6 +8,8 @@ COPY package*.json ./
 
 RUN npm install tsx -g
 
+RUN npm run build
+
 COPY . .
 
 COPY .env.example .env
